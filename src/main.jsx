@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
 
@@ -9,6 +8,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Main from './component/Main/Main.jsx';
+import Home from './component/Home/Home.jsx';
+import About from './component/About-Us/About.jsx';
+import Features from './component/Features/Features.jsx';
+import Solutions from './component/Solutions/Solutions.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +20,20 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:
-      }
+        element:<Home></Home>
+      },
+      {
+        path:"/about",
+        element:<About></About>
+      },
+      {
+        path:"/features",
+        element:<Features></Features>
+      },
+      {
+        path:"/solutions",
+        element:<Solutions></Solutions>
+      },
     ]
   },
 ]);

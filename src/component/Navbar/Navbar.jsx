@@ -6,7 +6,7 @@ const Navbar = () => {
             <img className="h-12" src={img} alt="" />
             <div className="grid grid-cols-4 text-xl font-semibold w-3/5">
                 <a href="/">Home</a>
-                <a href="/about-us">About Us</a>
+                <a href="/about">About Us</a>
                 <a href="/features">Features</a>
                 <a href="/solutions">Solutions</a>
             </div>
